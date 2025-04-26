@@ -1,0 +1,15 @@
+spring:
+  application:
+    name:hf-demo
+  ai:
+    huggingface:
+      chat:
+        api-key: ${HUGGINGFACE_API_KEY}
+        url: https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
